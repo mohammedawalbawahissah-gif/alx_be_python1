@@ -1,0 +1,81 @@
+import React from 'react'
+
+// Simple React portfolio component showcasing the Mobile Diagnostic Dashboard
+// This component is intended as a single-file preview. Replace image paths with your hosted assets when deploying.
+
+export default function HealthLinkDashboard() {
+  return (
+    <div className="min-h-screen bg-gray-50 p-8 font-sans">
+      <header className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold mb-2">Mobile Diagnostic Data Dashboard — Case Study</h1>
+        <p className="text-lg text-gray-700">Client: HealthLink Africa • Role: UX / Product Designer</p>
+      </header>
+
+      <main className="max-w-4xl mx-auto mt-8 space-y-8">
+        <section className="bg-white rounded-2xl p-6 shadow">
+          <h2 className="text-2xl font-semibold mb-3">Overview</h2>
+          <p>
+            A mobile-first diagnostic dashboard designed for rural clinics to improve turnaround time and
+            provide program-level visibility for NGO directors.
+          </p>
+        </section>
+
+        <section className="bg-white rounded-2xl p-6 shadow">
+          <h2 className="text-2xl font-semibold mb-3">Screenshots (High-fidelity mockups)</h2>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div className="border rounded overflow-hidden">
+              <img src="/mnt/data/screen_home.png" alt="Home Dashboard" />
+              <div className="p-4">
+                <h3 className="font-medium">Home Dashboard</h3>
+                <p className="text-sm text-gray-600">Real-time alerts, quick stats and recent results.</p>
+              </div>
+            </div>
+
+            <div className="border rounded overflow-hidden">
+              <img src="/mnt/data/screen_patient.png" alt="Patient Results" />
+              <div className="p-4">
+                <h3 className="font-medium">Patient Results</h3>
+                <p className="text-sm text-gray-600">Patient-level historical data and result details.</p>
+              </div>
+            </div>
+
+            <div className="border rounded overflow-hidden">
+              <img src="/mnt/data/screen_alerts.png" alt="Alerts" />
+              <div className="p-4">
+                <h3 className="font-medium">Alerts</h3>
+                <p className="text-sm text-gray-600">Critical values and delayed tests highlighted.</p>
+              </div>
+            </div>
+
+            <div className="border rounded overflow-hidden">
+              <img src="/mnt/data/screen_analytics.png" alt="Analytics" />
+              <div className="p-4">
+                <h3 className="font-medium">Clinic Analytics</h3>
+                <p className="text-sm text-gray-600">Program-level metrics and trends.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white rounded-2xl p-6 shadow">
+          <h2 className="text-2xl font-semibold mb-3">Case Study (PDF)</h2>
+          <p className="mb-4">Download the full case study PDF:</p>
+          <a href="/mnt/data/Mobile_Diagnostic_Dashboard_Case_Study.pdf" className="inline-block px-4 py-2 bg-blue-600 text-white rounded">Download PDF</a>
+        </section>
+
+        <section className="bg-white rounded-2xl p-6 shadow">
+          <h2 className="text-2xl font-semibold mb-3">Next Steps</h2>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>Usability testing with clinicians in 2 pilot clinics</li>
+            <li>Mid-fidelity UI design & handoff (Figma)</li>
+            <li>API prototype & WhatsApp/SMS integration</li>
+          </ol>
+        </section>
+      </main>
+
+      <footer className="max-w-4xl mx-auto mt-12 text-center text-sm text-gray-500">
+        Created by Mohammed Awal Bawah Issah — Mobile Diagnostic Dashboard (mock project)
+      </footer>
+    </div>
+  )
+}
